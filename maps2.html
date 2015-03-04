@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GIS</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700|Lato:500' rel='stylesheet' type='text/css'>
+	<link href="http://prototype.fcc.gov/css/styles.css" rel="stylesheet">
+	<script src="http://prototype.fcc.gov/js/jquery-1.11.1.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/selectivizr-min.js"></script>
+	<![endif]-->
+	<style>
+		.map-thumbnail {
+			float: left;
+			width: 75%;
+
+			
+		}	
+	</style>
+</head>
+<body>
+	<div class="page row-offcanvas row-offcanvas-right">
+		<header class="site-header">
+		<nav role="navigation">
+			<div class="navbar navbar-default navbar-static-top navbar-primary">
+				<div class="container">
+					<div class="navbar-header">
+						<h1 class="navbar-brand">
+							<a class="navbar-logo" href="/" title="Home">
+								Federal Communications Commission
+							</a>
+						</h1>
+					</div>	
+				</div>
+			</div>		
+		<nav role="navigation" class="css-screen-reader-only" tabindex="1">
+		</header>
+		<div class="page-content page-home" role="main">
+			<section class="section-maps">
+				<div class="container">
+					<div class="block block-map-teasers-home">
+						<div class="block-header">
+							<h1 class="section-header-priority">MAPS</h1>
+						</div>
+						<div id="map-carousel">
+							<div id="map-carousel-inner" class="block-list block-list-rows" role="listbox">
+								<div class="item block-list-item active">
+									<a href= "javascript:" onclick="window.open('http://a.tiles.mapbox.com/v3/fcc.lpfm_test1/page.html#4/38.00/-98.00');"target=_blank">
+										<center>
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\lowpowerfmpolygon.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												Low Power FM Polygon
+											</h3>
+										</div>
+									</a>
+								</div>
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://a.tiles.mapbox.com/v3/computech.lpfm/page.html#5/38.634/-97.603');"target=_blank">
+										<center>	
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\lowpowerfmcensus.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												Low Power FM Census
+											</h3>
+										</div>
+									</a>
+								</div>
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://nelson:7028/coverageright/index.html');"target=_blank">									
+										<center>	
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\coverageright.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-infop3">
+											<h3 class="map-name block-list-item-heading">
+												Coverage Right
+											</h3>
+										</div>
+									</a>
+								</div>
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://nelson:7028/swatgis/lpfm-demo/index.html');"target=_blank">											
+										<center>
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\findinglpfm.JPG" alt="" title="">
+											</div>
+										</center>
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												Finding LPFM Stations
+											</h3>
+										</div>
+									</a>
+								</div> 
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://nelson:7028/calltraffic/');"target=_blank">											
+										<center>
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\ibmcalltraffic2010.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												IBM Call Traffic 2010
+											</h3>
+										</div>
+									</a>
+								</div> 	  
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://nelson:7028/cma/');"target=_blank">												
+										<center>	
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\cmamap.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												CMA Map
+											</h3>
+										</div>
+									</a>
+								</div> 	  
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://www.fcc.gov/maps/fcc-connect-america-fund-phase-ii-initial-eligible-areas-map');"target=_blank">										
+										<center>	
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\connectamericaphaseii.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												Connect America Phase II - Initial Eligible Areas Map
+											</h3>
+										</div>
+									</a>
+								</div> 	 
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://www.fcc.gov/maps/E-rate-fiber-map');"target=_blank">									
+										<center>
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\eratefibermaps.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												E-Rate Fiber Maps
+											</h3>
+										</div>
+									</a>
+								</div> 	
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://apps.fcc.gov/wcb/sabdata/index.html');"target=_blank">										
+										<center>	
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\sab.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												SAB Data Map
+											</h3>
+										</div>
+									</a>
+								</div> 
+								<div class="item block-list-item">
+									<a href= "javascript:" onclick="window.open('http://fccdata.github.io/connect2health-map/');"target=_blank">										
+										<center>	
+											<div class="map-thumbnail">
+												<img src="N:\GIS_PAGE\Maps\connectivitiyva.JPG" alt="" title="">
+											</div>
+										</center>	
+										<div class="map-info">
+											<h3 class="map-name block-list-item-heading">
+												Connectivity & Health in Virginia
+											</h3>
+										</div>
+									</a>
+								</div> 										
+							</div>  
+						</div>	
+					</div>	
+				</div>		
+			</section>
+			<footer class="page-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="row">
+							<div class="col-md-4 col-sm-12">
+								<div class="row">
+									<div class="col-md-12 col-sm-6">
+										<address class="contact-info">
+											Federal Communications Commission <br>
+											445 12th Street SW, Washington, DC 20554 <br>
+										</address>
+										<ul class="contact-info contact-phone">
+											<li>
+												<a class="phone-link" href="tel:+18882255322">Phone: 1-888-225-5322</a>
+											</li>
+											<li>
+												<a class="phone-link" href="tel:+18888355322">TTY: 1-888-835-5322</a>
+											</li>
+											<li>
+												<a class="phone-link" href="tel:+18444322275">Videophone: 1-844-432-2275</a>
+											</li>
+											<li>
+												<a class="phone-link" href="tel:+18884185322">Fax: 1-866-418-0232</a>
+											</li>
+										</ul>
+										<a class="contact-link btn-mobile" href="#">
+											Contact Us
+										</a>
+										<ul class="footer-links social-media-links">
+											<li>
+												<a class="social-media twitter" href="#" title="">
+													Twitter
+												</a>
+											</li>
+											<li>
+												<a class="social-media facebook" href="#" title="">
+													Facebook
+												</a>
+											</li>
+											<li>
+												<a class="social-media youtube" href="#" title="">
+													Youtube
+												</a>
+											</li>
+											<li>
+												<a class="social-media flickr" href="#" title="">
+													Flickr
+												</a>
+											</li>
+										</ul>							
+									</div>
+									<div class="col-md-12 col-sm-6">
+										<span class="fcc-seal hide-text">
+											Federal Communications Commission
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 visible-md-block visible-lg-block">
+								<div class="row">
+									<div class="col-xs-4">
+										<ul class="footer-links footer-links-sitemap">
+											<li>
+												<a href="#">Website Policies &amp; Notices</a>
+											</li>
+											<li>
+												<a href="#">FOIA</a>
+											</li>
+											<li>
+												<a href="#">No Fear Act Data</a>
+											</li>
+											<li>
+												<a href="#">FCC Digital Strategy</a>
+											</li>
+											<li>
+												<a href="#">Open Government Directive</a>
+											</li>
+											<li>
+												<a href="#">Plain Writing Act</a>
+											</li>
+											<li>
+												<a href="#">RSS Feeds &amp; Email Updates</a>
+											</li>
+											<li>
+												<a href="#">Disability Rights</a>
+											</li>
+										</ul>							
+									</div>
+									<div class="col-xs-4">
+										<h4 class="footer-heading">Categories</h4>
+										<ul class="footer-links footer-links-categories">
+											<li>
+												<a href="about.php">About the FCC</a>
+											</li>
+											<li>
+												<a href="proceedings.php">Proceedings &amp; Actions</a>
+											</li>
+											<li>
+												<a href="licensing.php">Licensing &amp; Databases</a>
+											</li>
+											<li>
+												<a href="#">Reports &amp; Research</a>
+											</li>
+											<li>
+												<a href="news-events.php">News &amp; Events</a>
+											</li>
+											<li>
+												<a href="consumer-landing.php">For Consumers</a>
+											</a>
+										</ul>							
+									</div>
+									<div class="col-xs-4">
+										<h4 class="footer-heading">Bureaus &amp; Offices</h4>
+										<ul class="footer-links footer-links-bureaus-offices">
+											<li>
+												<a href="#">Consumer</a>
+											</li>
+											<li>
+												<a href="#">Enforcement</a>
+											</li>
+											<li>
+												<a href="#">International</a>
+											</li>
+											<li>
+												<a href="media-bureau.php">Media</a>
+											</li>
+											<li>
+												<a href="#">Public Safety</a>
+											</li>
+											<li>
+												<a href="#">Wireless</a>
+											</li>
+											<li>
+												<a href="#">Wireline</a>
+											</li>
+											<li>
+												<a href="#">Offices</a>
+											</li>
+										</ul>							
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>	
+</body>
+</html>
